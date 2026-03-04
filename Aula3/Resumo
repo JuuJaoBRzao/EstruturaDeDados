@@ -1,0 +1,75 @@
+Físicas: váriaveis das linguagens de programação: int, float, char, string, vetores, matrizes...
+Abstratas: 
+- Lista
+    - C++       - vector
+    - Java      - List, ArrayList, LinkedList
+    - C#        - List, ArrayList
+    - Python    - List
+- Pilha
+- Árvore
+- Grafo
+
+  -Algoritmos de gestão de memória: guardar/armazenar e buscar/pesquisar da melhor forma possível (eficiência)
+    -Operações clássicas:
+      - Inserir
+          - C++      - push_back()
+          - Java     - add()
+          - C#       - Add()
+          - Python   - Append()
+      - Remover
+          - C++      - pop_back() ou erase()
+          - Java     - remove()
+          - C#       - Remove()
+          - Python   - remove()
+      - Verifica tamanho da estrutura
+          - C++      - size()
+          - Java     - size()
+          - C#       - Count()
+          - Python   - len()
+      - Se está vazia
+          - se o tamanho for igual a zero
+          - empty() ou isEmpty()
+      - Localizar
+          vetor = (5, 9, 7, 2, 5)
+          TAM = 5
+
+          - C
+              numero = 5;
+              encontrado = false;
+              for (int i = 0; i < TAM; i++) {
+                if (numero == vetor[i]) {
+                  encontrado = true;
+                  break;
+                }
+              }  
+              if (encontrado) {
+                print("Numero encontrado");
+              } else {
+                print("Numero não encontrado");
+              }
+
+          - Python
+                vetor = (5, 9, 7, 5, 3)
+                numero = 5
+                if numero in vetor:
+                  print("Encontrado")
+                else
+                  printf("Não encontrado")
+
+           - Java
+                vetor = (5, 9, 7, 5, 3)
+                numero = 5
+                if (vetor.contains(numero)) {
+                  System.out.printIn("Encontrado");
+                } else {
+                  System.out.printIn("Não encontrado");
+                }
+
+           - C#
+                vetor = (5, 9, 7, 5, 3)
+                numero = 5
+                if (vetor.Contains(numero)) {
+                  Console.write("Encontrado");
+                } else {
+                  Console.write("Não encontrado");
+                }
