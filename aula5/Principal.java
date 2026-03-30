@@ -26,5 +26,20 @@ public class Principal {
         for (Clima c : lista) {
             System.out.println(c);
         }
+
+        Clima maisQuente = null;
+        Clima maisFrio = null;
+
+        for (Clima c : lista) {
+            if (maisQuente == null || c.temperatura.trim().equals("Quente")) {
+            maisQuente = c;
+            }
+
+            if (maisFrio == null || c.temperatura.trim().equals("Frio")) {
+            maisFrio = c;
+            }
+        }
+        System.out.println("\nMais quente: " + maisQuente);
+        System.out.println("Mais frio: " + maisFrio);
     }
 }
