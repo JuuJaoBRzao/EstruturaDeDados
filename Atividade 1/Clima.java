@@ -5,7 +5,7 @@ public class Clima {
     String temperatura;
     String precipitacao;
 
-	//Atribuindo valores para as váriaveis
+	//Atribuindo valores para as váriaveis, construtor
     public Clima(String ano, String mes, String temperatura, String precipitacao) {
         this.ano = ano;
         this.mes = mes;
