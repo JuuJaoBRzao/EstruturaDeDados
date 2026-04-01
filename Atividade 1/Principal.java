@@ -41,11 +41,11 @@ public class Principal {
          leitor.close();
 
 		//declarando as variaveis para medir o mes mais quente e o mes mais frio
-         Clima maisQuente = null;
-         Clima maisFrio = null;
+         Clima maisQuente = null; //igualando mais quente a nulo para descobrir o mes mais quente
+         Clima maisFrio = null; //igualando mais frio a nulo para descobrir o mes mais frio
          
-         int maiorPrecipitacao = -1;
-         int menorPrecipitacao = Integer.MAX_VALUE;
+         int maiorPrecipitacao = -1; //colocando valor como -1 pois a precipitação não pode ser negativa, assim o programa vai conseguir encontrar o valor mais alto de precipitação
+         int menorPrecipitacao = Integer.MAX_VALUE; //colocando valor como maior valor possível para o programa encontrar o valor mais baixo de precipitação
 
 		//vai percorrer toda a lista até achar o mes mais quente e o mais frio
          for (Clima c : lista) {
