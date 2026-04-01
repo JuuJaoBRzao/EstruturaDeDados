@@ -1,5 +1,5 @@
 public class Clima {
-	  String ano;
+	String ano;
     String mes;
     String temperatura;
     String precipitacao;
