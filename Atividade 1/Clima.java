@@ -23,11 +23,11 @@ public class Clima {
 	//os climas vão ser iguais se eles tiverem o mesmo ano e mês
     @Override
     public boolean equals(Object obj) {
-        if (this == obj) return true;
-        if (obj == null || !(obj instanceof Clima)) return false;
+        if (this == obj) return true; //verifica se os objetos são iguais, vai retornar true se for o caso
+        if (obj == null || !(obj instanceof Clima)) return false; //verifica se o objeto é nulo ou se não é da classe clima, vai retornar false se for o caso
 
-        Clima c = (Clima) obj;
+        Clima c = (Clima) obj; //declara um objeto do tipo clima para comparar os atributos
 
-        return this.ano.equals(c.ano) && this.mes.equals(c.mes);
+        return this.ano.equals(c.ano) && this.mes.equals(c.mes); //verifica se o ano e o mes são iguais
     }
 }

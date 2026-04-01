@@ -1,3 +1,4 @@
+//importando as bibliotecas para o programa funcionar
 import java.util.ArrayList;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -6,7 +7,8 @@ import java.util.Scanner;
 public class Principal {
 
 	public static void main(String[] args) {
-		ArrayList<Clima> lista = new ArrayList<>();
+		//declarando a lista para armazenar os objetos do tipo clima
+        ArrayList<Clima> lista = new ArrayList<>();
 
 		//iniciando o tratamento de exceções
 		try {
@@ -68,12 +70,12 @@ public class Principal {
 
          //mostrando o resultado
          System.out.println("Mês mais quente:");
-         if (maisQuente != null) {
+         if (maisQuente != null) { //se o mes mais quente for diferente de nulo, mostra na tela
              System.out.println(maisQuente);
          }
 
          System.out.println("\nMês mais frio:");
-         if (maisFrio != null) {
+         if (maisFrio != null) { //se o mes mais frio for diferente de nulo, mostra na tela
              System.out.println(maisFrio);
          }
 
