@@ -7,6 +7,7 @@ public class Arvore {
         ArrayList<Integer> lista = new ArrayList<>();
         int quantidade = 10000000;
 
+        //adicionando na arvore
         long inicio = System.currentTimeMillis();
         for (int i = 0; i < quantidade; i++) {
             int numero = (int) (Math.random() * quantidade);
@@ -16,8 +17,9 @@ public class Arvore {
         long fim = System.currentTimeMillis();
         long tempoDecorrido = fim - inicio;
         System.out.println("Tempo de execução em arvore: " + tempoDecorrido + " ms");
- 
-        inicio = System.currentTimeMillis();
+        
+       //adicionando na lista 
+       inicio = System.currentTimeMillis();
         for (int i = 0; i < quantidade; i++) {
             int numero = (int) (Math.random() * quantidade);
             lista.add(numero);
@@ -25,5 +27,20 @@ public class Arvore {
         fim = System.currentTimeMillis();
         tempoDecorrido = fim - inicio;
         System.out.println("Tempo de execução lista: " + tempoDecorrido + " ms");
+
+        //pesquisando na árvore
+        inicio = System.currentTimeMillis();
+        System.out.println("Verificando se o número -9 está presente na árvore: " + arvore.contains(-9));
+        fim = System.currentTimeMillis();
+        tempoDecorrido = fim - inicio;
+        System.out.println("Tempo de execução de pesquisa em árvore: " + tempoDecorrido + " ms");
+ 
+        //pesquisando na lista
+        inicio = System.currentTimeMillis();
+        System.out.println("Verificando se o número -9 está presente na lista: " + lista.contains(-9));
+        fim = System.currentTimeMillis();
+        tempoDecorrido = fim - inicio;
+        System.out.println("Tempo de execução de pesquisa em lista: " + tempoDecorrido + " ms");
     }
 }
+
