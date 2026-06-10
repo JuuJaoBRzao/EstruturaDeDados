@@ -59,12 +59,13 @@ public class Grafo {
     }
 
     void mostrarMatriz() {
-        for (String v : vertices) System.out.printf("%20s", v);
+         System.out.printf("%18s", "");
+        for (String v : vertices) System.out.printf("%18s", v);
         System.out.println();
         for (int i = 0; i < qtdVertices; i++) {
-            System.out.printf("%20s", vertices.get(i));
+            System.out.printf("%18s", vertices.get(i));
             for (int j = 0; j < qtdVertices; j++) {
-                System.out.printf("%20d", matrizADJ[i][j]);
+                System.out.printf("%18d", matrizADJ[i][j]);
             }
             System.out.println();
         }
